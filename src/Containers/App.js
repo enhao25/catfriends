@@ -49,7 +49,7 @@ class App extends Component {
         // Fetch helps us to get from http, then, get the response and return it, then set the state to cats : users
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => {return response.json()})
-            .then(users=> {{this.setState({cats: users})}})
+            .then(users=> {this.setState({cats: users})})
     }
     
 }
